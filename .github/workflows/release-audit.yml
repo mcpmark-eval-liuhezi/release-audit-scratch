@@ -1,0 +1,14 @@
+name: Release Audit
+
+on:
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report audited release tag
+        run: |
+          echo "Upstream dependency audit"
+          echo "Repository under audit: facebook/react"
+          echo "Release tag being audited: v18.3.1"
